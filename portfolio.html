@@ -1,60 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Projects</title>
+    <title>Kim Eleazer | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Kim Eleazer</a>
 
-    <main>
-        <h1>My Projects</h1>
-
-        <div class="project-card">
-            <h2>Project 1 - Personal Website</h2>
-            <p>A simple personal website created using pure HTML and CSS. This was my first project while learning web development.</p>
-        </div>
-
-        <div class="project-card">
-            <h2>Project 2 - School Activity Site</h2>
-            <p>A multi-page website made for a school activity. It includes navigation, forms, and proper external CSS.</p>
-        </div>
-
-        <div class="project-card">
-            <h2>Project 3 - Landing Page</h2>
-            <p>A clean landing page design focused on good layout and readability using Flexbox techniques.</p>
-        </div>
-
-        <section class="gallery">
-            <h2>My Photos and Project Screenshot</h2>
-
-            <div class="gallery-item">
-                <h3>My Professional Photo</h3>
-                <img src="Screenshot%202026-11-19%20183310.png"
-                     alt="My Professional Photo"
-                     class="project-image">
+            <div class="nav-links">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contacts</a>
             </div>
+        </nav>
+    </header>
 
-            <div class="gallery-item">
-                <h3>My Project Screenshot</h3>
-                <img src="project-screenshot.jpg"
-                     alt="Screenshot of my project"
-                     class="project-image">
-            </div>
+    <main class="page-container">
+        <section class="page-heading">
+            <h1>My Portfolio</h1>
+            <p>Here are some of my school projects and activities.</p>
         </section>
 
+        <section class="project-grid">
+
+            <article class="project-card">
+                <h2>Personal Website</h2>
+                <p>
+                    My first HTML and CSS project.
+                    It introduced me to creating and designing
+                    a simple personal website.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h2>School Activity Website</h2>
+                <p>
+                    A multi-page website created for a school activity.
+                    It includes navigation, forms, and external CSS.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h2>Landing Page</h2>
+                <p>
+                    A simple landing page using CSS Flexbox
+                    to organize and arrange website elements.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="gallery-section">
+            <h2>Project Gallery</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="project-screenshot.jpg"
+                         alt="My first project screenshot">
+                    <p>My Project Screenshot</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Screenshot_20261119_211010_com_facebook_orca_MainActivity.jpg"
+                         alt="My additional project screenshot">
+                    <p>Additional Project Screenshot</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kim Eleazer G. Viaña. All rights reserved.</p>
+        <p>&copy; 2026 Kim Eleazer G. Viaña. All Rights Reserved.</p>
     </footer>
 
 </body>
