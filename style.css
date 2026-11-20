@@ -1,10 +1,16 @@
 
-/* GENERAL SETTINGS */
+/* =================================
+   GENERAL SETTINGS
+================================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +20,9 @@ body {
     line-height: 1.6;
 }
 
-/* NAVIGATION BAR */
+/* =================================
+   NAVIGATION BAR
+================================= */
 
 .navbar {
     width: 100%;
@@ -50,7 +58,9 @@ body {
     color: #bcb9b5;
 }
 
-/* HOMEPAGE */
+/* =================================
+   HOMEPAGE
+================================= */
 
 .hero {
     min-height: 75vh;
@@ -92,7 +102,7 @@ body {
 .contact-button {
     display: inline-block;
     background-color: #bcb9b5;
-    color: #ffffff;
+    color: #343434;
     text-decoration: none;
     padding: 14px 28px;
     font-weight: bold;
@@ -101,10 +111,11 @@ body {
 
 .contact-button:hover {
     background-color: #ffffff;
-    color: #343434;
 }
 
-/* GENERAL PAGE LAYOUT */
+/* =================================
+   GENERAL PAGE LAYOUT
+================================= */
 
 .page-container {
     width: 90%;
@@ -128,23 +139,32 @@ body {
     font-size: 17px;
 }
 
-/* CONTENT CARDS */
+/* =================================
+   ABOUT PAGE
+================================= */
+
+.about-title {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
 
 .content-card {
     background-color: #414141;
     border: 1px solid #555555;
     padding: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
 .content-card h2 {
-    font-size: 25px;
-    margin-bottom: 18px;
+    font-size: 27px;
+    margin-bottom: 20px;
 }
 
 .content-card p {
     color: #dddddd;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
 /* EDUCATION */
@@ -160,6 +180,11 @@ body {
 
 .info-item h3 {
     margin-bottom: 5px;
+    font-size: 19px;
+}
+
+.info-item p {
+    color: #cccccc;
 }
 
 /* SKILLS */
@@ -168,6 +193,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    margin-top: 20px;
 }
 
 .skills-list span {
@@ -178,7 +204,9 @@ body {
     font-size: 14px;
 }
 
-/* PORTFOLIO PROJECTS */
+/* =================================
+   PORTFOLIO PAGE
+================================= */
 
 .project-grid {
     display: grid;
@@ -230,6 +258,7 @@ body {
     background-color: #414141;
     padding: 15px;
     border-radius: 5px;
+    border: 1px solid #555555;
 }
 
 .gallery-item img {
@@ -245,7 +274,9 @@ body {
     color: #dddddd;
 }
 
-/* CONTACT PAGE */
+/* =================================
+   CONTACT PAGE
+================================= */
 
 .contact-layout {
     display: grid;
@@ -269,6 +300,7 @@ body {
 .contact-item a {
     color: #d4d0ca;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .contact-item a:hover {
@@ -313,7 +345,7 @@ form button {
     padding: 14px;
     border: none;
     background-color: #bcb9b5;
-    color: #ffffff;
+    color: #343434;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
@@ -322,10 +354,11 @@ form button {
 
 form button:hover {
     background-color: #ffffff;
-    color: #343434;
 }
 
-/* FOOTER */
+/* =================================
+   FOOTER
+================================= */
 
 footer {
     text-align: center;
@@ -335,13 +368,18 @@ footer {
     margin-top: 40px;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
 
 @media (max-width: 768px) {
 
+    /* Navigation */
+
     .navbar {
         flex-direction: column;
-        padding: 25px 15px;
+        padding: 20px 15px;
+        gap: 15px;
     }
 
     .nav-links {
@@ -349,6 +387,12 @@ footer {
         justify-content: center;
         gap: 18px;
     }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Homepage */
 
     .hero {
         flex-direction: column;
@@ -369,17 +413,72 @@ footer {
         font-size: 34px;
     }
 
-    .page-heading h1 {
-        font-size: 34px;
+    /* General pages */
+
+    .page-container {
+        width: 92%;
+        margin: 35px auto;
     }
 
+    .page-heading h1,
+    .about-title {
+        font-size: 36px;
+    }
+
+    /* About */
+
+    .content-card {
+        padding: 25px;
+    }
+
+    .content-card h2 {
+        font-size: 24px;
+    }
+
+    .content-card p {
+        font-size: 16px;
+    }
+
+    /* Portfolio */
+
     .project-grid,
-    .gallery-grid,
-    .contact-layout {
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
 
     .gallery-item img {
         height: 230px;
+    }
+
+    /* Contacts */
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .about-title,
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .content-card {
+        padding: 20px;
     }
 }
