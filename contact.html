@@ -1,72 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Contact</title>
+    <title>Kim Eleazer | Contacts</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Kim Eleazer</a>
 
-    <main>
-        <h1>Contact Me</h1>
-        <p>Feel free to contact me through any of the platforms below!</p>
+            <div class="nav-links">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </nav>
+    </header>
 
-        <section class="contact-info">
-
-            <h2>My Contact Information</h2>
-
-            <p>
-                <strong>Facebook:</strong>
-                <a href="https://www.facebook.com/share/1GDaxHskBe/"
-                   target="_blank" rel="noopener noreferrer">
-                    Kim Eleazer
-                </a>
-            </p>
-
-            <p>
-                <strong>Gmail:</strong>
-                <a href="mailto:kimeleazer2008@gmail.com">
-                    kimeleazer2008@gmail.com
-                </a>
-            </p>
-
-            <p>
-                <strong>Phone:</strong>
-                <a href="tel:0993-131-0996">
-                    0993-131-0996
-                </a>
-            </p>
-
+    <main class="page-container">
+        <section class="page-heading">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me through these platforms.</p>
         </section>
 
-        <section class="contact-form">
-            <h2>Send Me a Message</h2>
+        <section class="contact-layout">
 
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"
-                       placeholder="Enter your name" required>
+            <div class="content-card">
+                <h2>My Contact Information</h2>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
+                <div class="contact-item">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/share/1GDaxHskBe/"
+                       target="_blank" rel="noopener noreferrer">
+                        Kim Eleazer
+                    </a>
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"
-                          placeholder="Write your message here"
-                          rows="5" required></textarea>
+                <div class="contact-item">
+                    <h3>Gmail</h3>
+                    <a href="mailto:kimeleazer@gmail.com">
+                        kimeleazer@gmail.com
+                    </a>
+                </div>
 
-                <button type="submit">Send Message</button>
-            </form>
+                <div class="contact-item">
+                    <h3>Phone Number</h3>
+                    <a href="tel:09931310996">
+                        09931310996
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>Send Me a Message</h2>
+
+                <form action="mailto:kimeleazer@gmail.com"
+                      method="post" enctype="text/plain">
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="Name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="Email"
+                           placeholder="Enter your email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="Message"
+                              placeholder="Write your message"
+                              rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
         </section>
     </main>
 
